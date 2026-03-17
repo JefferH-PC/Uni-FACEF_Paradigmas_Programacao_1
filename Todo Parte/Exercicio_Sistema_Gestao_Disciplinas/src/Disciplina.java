@@ -54,8 +54,13 @@ public class Disciplina {
         this.alunos = alunos;
     }
 
-    public ArrayList<Avaliacao> getAvaliacoes() {
-        return avaliacoes;
+    public Avaliacao getAvaliacoes(String nome) {
+       for (Avaliacao av : avaliacoes){
+           if(av.getNome().equalsIgnoreCase(nome)){
+               return av;
+           }
+        }
+       return null;
     }
     public void setAvaliacoes(ArrayList<Avaliacao> avaliacoes) {
         this.avaliacoes = avaliacoes;

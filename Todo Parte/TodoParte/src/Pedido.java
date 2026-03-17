@@ -22,6 +22,14 @@ public class Pedido {
         System.out.println("Item adicionado com sucesso.");
     }
 
+    public float calcularTotal(){
+        float total = 0.0f;
+        for (ItemPedido item : itensPedido) {
+            total += item.getQtde() * item.getProduto().getPreco();
+        }
+        return total;
+    }
+
     public Cliente getCliente() {
         return cliente;
     }
@@ -50,6 +58,7 @@ public class Pedido {
                 ", data=" + data +
                 ", cliente=" + cliente +
                 ", itensPedido=\n" + itensPedido +
+                ", Preço total = R$" + this.calcularTotal() +
                 '}';
     }
 }

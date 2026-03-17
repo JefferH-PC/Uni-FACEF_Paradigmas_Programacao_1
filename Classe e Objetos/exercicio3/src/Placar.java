@@ -25,7 +25,7 @@ public class Placar{
                 default:
                     System.out.println("Time Inválido.");
             }
-        }
+        } else System.out.println("Pontuação inválida.");
     }
 
     public void proximoQuarto() {

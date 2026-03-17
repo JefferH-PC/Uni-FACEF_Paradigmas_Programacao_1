@@ -41,7 +41,7 @@ public class ArCondicionado {
     public void setLigado(boolean l){
         this.ligado = l;
     }
-    public boolean getLigado(){
+    public boolean isLigado(){
         return this.ligado;
     }
 
@@ -62,6 +62,6 @@ public class ArCondicionado {
 
     public String toString(){
         return "Marca: " + this.getMarca() + " | Modelo: " + this.getModelo() +
-                " | Temperatura: " + this.getTemperatura() + " °C" + " | Status: " + (this.getLigado()? "Ligado" : "Desligado");
+                " | Temperatura: " + this.getTemperatura() + " °C" + " | Status: " + (this.isLigado()? "Ligado" : "Desligado");
     }
 }

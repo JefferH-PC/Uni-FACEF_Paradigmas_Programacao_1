@@ -8,7 +8,7 @@ public class TestaAcademico{
         disc1.matricularAluno(aluno2);
 
         disc1.criarAvaliacao(5,"Prova Semestral");
-        Avaliacao aval1 = disc1.getAvaliacoes().get(0);
+        Avaliacao aval1 = disc1.getAvaliacoes("Prova Semestral");
         aval1.adicionarQuestao(1, "O que é um objeto na programação?", 1);
         aval1.adicionarQuestao(2, "Qual a importância de definir um atributo privado?", 2);
         aval1.adicionarQuestao(3, "Para que servem os getters e setters?", 2);
