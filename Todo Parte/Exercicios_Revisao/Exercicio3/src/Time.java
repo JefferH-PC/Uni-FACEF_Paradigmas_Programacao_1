@@ -1,10 +1,9 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Time {
     private int id;
     private String nome, tecnico;
-    private List<Atleta> atletas;
+    private ArrayList<Atleta> atletas;
 
     public Time() {
         this.atletas = new ArrayList<>();
@@ -42,10 +41,10 @@ public class Time {
         this.tecnico = tecnico;
     }
 
-    public List<Atleta> getAtletas() {
+    public ArrayList<Atleta> getAtletas() {
         return atletas;
     }
-    public void setAtletas(List<Atleta> elenco) {
+    public void setAtletas(ArrayList<Atleta> elenco) {
         this.atletas = elenco;
     }
 
